@@ -1,5 +1,7 @@
 # Oprava GRUB
 
+Pripojit pres live cd
+
 ```
 sudo mount /dev/nvme0n1p5 /mnt
 for i in /sys /proc /run /dev; do sudo mount --rbind "$i" "/mnt$i"; done
