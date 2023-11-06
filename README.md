@@ -14,3 +14,12 @@ sudo reboot
 ```
 
 Based on https://askubuntu.com/questions/88384/how-can-i-repair-grub-how-to-get-ubuntu-back-after-installing-windows
+
+# Smerovani VPN
+
+```
+sudo ip route add default via 192.168.1.1
+sudo ip route add <vpn-network>/8 via 0.0.0.0 dev tun0
+sudo ip route add <vpn-network>/8 via 0.0.0.0 dev tun0
+...
+```
